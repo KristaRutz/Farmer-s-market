@@ -52,7 +52,7 @@ class Body extends React.Component{
     </div>
     
     {/* Produce of selected month */}
-    <div>
+    <div className="text-center extra-margin">
       <Season month={availableProduce[this.state.month-1].month} selection={availableProduce[this.state.month-1].selection}/>
     </div>
 

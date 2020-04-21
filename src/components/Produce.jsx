@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Produce(props){
-  return <><span className="">{props.item}</span></>;
+  return <><span className="produce-item">{props.item}</span></>;
 }
 
 Produce.propTypes = {

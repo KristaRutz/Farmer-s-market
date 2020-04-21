@@ -1,13 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// {  
-//   day: "Tuesday",
-//   location: "Hillsboro",
-//   hours: "5:00pm - 8:30pm",
-//   booth: "1F"
-// },
-
 function Schedule(props) {
   let hoursMessage = null;
   if (props.schedule.hours == "closed") {
@@ -26,7 +19,7 @@ function Schedule(props) {
     // </div>
     <div>
         <h6 className="lead">Location:</h6>
-        <p >{props.schedule.location} Farmer's Market, Booth {props.schedule.booth}</p>
+        <p >{props.schedule.location} Farmers' Market, Booth {props.schedule.booth}</p>
         <h6 className="lead">Hours:</h6>
         <p >{props.schedule.hours}</p>
     </div>
@@ -34,7 +27,7 @@ function Schedule(props) {
   }
   return (<React.Fragment>
     <h4>Where will Avery's Organics be today?</h4>
-    <h3 className="display-4">{props.schedule.day}s:</h3>
+    <h5 className="display-4 extra-margin">{props.schedule.day}s:</h5>
     {hoursMessage}
 </React.Fragment>)
 }
