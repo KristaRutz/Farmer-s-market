@@ -1,7 +1,7 @@
 
 # Farmer's Market
 
-#### A farmer's market webpage that allows users to check monthly and daily schedule.
+#### A farmer's market webpage that allows users to check monthly and daily schedule. :seedling: :apple:
 
 #### By **Krista Rutz and Jiwon Han**
 
@@ -28,7 +28,7 @@ Body represents Season and Schedule components. Season component pass down selec
 
 ### Sreenshot
 
-<image src="src/img/screenshot.png" width="750px" />
+<!-- <image src="src/img/screenshot.png" width="750px" /> -->
 
 ## 2. Development
 ### Tech stack:

@@ -14,11 +14,21 @@ function Schedule(props) {
     hoursMessage = (<p className="lead">Avery's Organics will be staying at home today! Catch us on another day.</p>);
   } else {
     hoursMessage = (
-    <div className="row">
-      <div className="col"><h6 className="lead">Location:</h6><h6 className="lead">Hours:</h6></div>
-      <div className="col"></div>
-      <p > {props.schedule.location} Farmer's Market, Booth {props.schedule.booth}</p>
-      <p ><strong className="lead">Hours:</strong> {props.schedule.hours}</p>
+    // <div className="row">
+    //   <div className="col col-md-6">
+    //     <h6 className="lead">Location:</h6>
+    //     <h6 className="lead">Hours:</h6>
+    //   </div>
+    //   <div className="col col-md-3">
+    //     <p >{props.schedule.location} Farmer's Market, Booth {props.schedule.booth}</p>
+    //     <p >{props.schedule.hours}</p>
+    //   </div>
+    // </div>
+    <div>
+        <h6 className="lead">Location:</h6>
+        <p >{props.schedule.location} Farmer's Market, Booth {props.schedule.booth}</p>
+        <h6 className="lead">Hours:</h6>
+        <p >{props.schedule.hours}</p>
     </div>
     );
   }
