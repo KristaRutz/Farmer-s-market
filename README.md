@@ -1,7 +1,7 @@
 
 # Farmer's Market
 
-#### A farmer's market webpage that allows users to check monthly and daily schedule.
+#### A farmer's market webpage that allows users to check monthly and daily schedule. :seedling: :apple:
 
 #### By **Krista Rutz and Jiwon Han**
 
