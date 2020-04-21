@@ -9,17 +9,31 @@ import PropTypes from "prop-types";
 // },
 
 function Schedule(props) {
-return (<React.Fragment>
-  <h1>Where will Avery's Organics be today?</h1>
-  <h2>{props.schedule.day}s:</h2>
-  <h2>{props.schedule.location}</h2>
-  <h2>{props.schedule.hours}</h2>
-  <h2>{props.schedule.booth}</h2>
+  let hoursMessage = null;
+  if (props.schedule.hours == "closed") {
+    hoursMessage = (<p className="lead">Avery's Organics will be staying at home today! Catch us on another day.</p>);
+  } else {
+    hoursMessage = (
+    <div className="row">
+      <div className="col"><h6 className="lead">Location:</h6><h6 className="lead">Hours:</h6></div>
+      <div className="col"></div>
+      <p > {props.schedule.location} Farmer's Market, Booth {props.schedule.booth}</p>
+      <p ><strong className="lead">Hours:</strong> {props.schedule.hours}</p>
+    </div>
+    );
+  }
+  return (<React.Fragment>
+    <h4>Where will Avery's Organics be today?</h4>
+    <h3 className="display-4">{props.schedule.day}s:</h3>
+    {hoursMessage}
 </React.Fragment>)
 }
 
 Schedule.propTypes = {
-
+  day: PropTypes.string.isRequired,
+  hours: PropTypes.string.isRequired,
+  location: PropTypes.string,
+  booth: PropTypes.string
 }
 
 export default Schedule;

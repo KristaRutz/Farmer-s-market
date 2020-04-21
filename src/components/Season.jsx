@@ -4,7 +4,7 @@ import Produce from "./Produce";
 
 function Season(props) {
 return (<React.Fragment>
-  <h2>{props.month}</h2>
+  <h2 className="display-4">{props.month}</h2>
   <ul>
     {props.selection.map((item, index) => (
       <li>

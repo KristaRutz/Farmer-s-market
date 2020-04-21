@@ -15,23 +15,50 @@ class Body extends React.Component{
     this.setState({month : event.target.value});
   }
 
+  handleDaySelect = (event) => {
+    this.setState({day: event.target.value})
+  }
+
   render(){
     console.log(this.state)
-  return (<div>
-    <div>
-    <select id="selectedMonth" value={this.state.month} onChange={this.handleSelect}>
-      {availableProduce.map((element, index) => (
-        <option value={index + 1}>{element.month}</option> 
-      ))}
-    </select>
+  return (
+  
+  <div className="">
+
+    <div className="row">
+      {/* Day Selector */}
+      <div className="form-group col">
+        <label for="selectedDay">View hours and location on another day:</label>
+        <select className="form-control" id="selectedDay" value={this.state.day} onChange={this.handleDaySelect}>
+          {marketSchedule.map((element, index) => (
+            <option value={index}>{element.day}</option> 
+          ))}
+        </select>
+      </div>
+      {/* Month Selector */}
+      <div className="form-group col">
+        <label className="" for="selectedMonth">View produce in another month:</label>
+        <select className="form-control" id="selectedMonth" value={this.state.month} onChange={this.handleSelect}>
+          {availableProduce.map((element, index) => (
+            <option value={index + 1}>{element.month}</option> 
+          ))}
+        </select>
+      </div>
     </div>
-    <div>
-    <Season month={availableProduce[this.state.month-1].month} selection={availableProduce[this.state.month-1].selection}/>
+
+    {/* Today's schedule */}
+    <div className="text-center extra-margin"> 
+      <Schedule schedule={marketSchedule[this.state.day]}/>
     </div>
+    
+    {/* Produce of selected month */}
     <div>
-    <Schedule schedule={marketSchedule[this.state.day]}/>
-</div>
-  </div>);
+      <Season month={availableProduce[this.state.month-1].month} selection={availableProduce[this.state.month-1].selection}/>
+    </div>
+
+  </div>
+  
+  );
   
   
   }
