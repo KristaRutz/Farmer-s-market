@@ -11,14 +11,14 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)](https://lbesson.mit-license.org/)
 
 
-## 1. Social Media Clone
+## 1. Farmer's Market
 
 Avery's Organics website displays monthly and daily schedule.
 Each month and day has different produce items and locations.
 
 <image src="src/img/diagram.png" width="550px" />
 
-Designed the components based on the two data : Available Product and Market Schedule.
+Designed the components based on two data : Available Product and Market Schedule.
 
 Available product has month and it's selection. Market schedule has day, location, hours, booth.
 
@@ -43,7 +43,7 @@ Body represents Season and Schedule components. Season component pass down selec
   # After successfull pkg installtion
   $ npm start
 ```
-Now, it will automatically open http://localhost:3000 and Avery's Organics website.
+Now, it will automatically open http://localhost:3000 and show you Avery's Organics website.
 
 ## 3. Known Bugs
 
