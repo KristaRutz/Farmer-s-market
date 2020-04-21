@@ -5,6 +5,7 @@ import Produce from "./Produce";
 function Season(props) {
 return (<React.Fragment>
   <h2 className="display-4">{props.month}</h2>
+  <div className="produce-columns">
     {props.selection.map((item, index) => (
       <p>
         <Produce 
@@ -13,6 +14,7 @@ return (<React.Fragment>
         />
       </p>
     ))}
+  </div>
 </React.Fragment>)
 }
 
