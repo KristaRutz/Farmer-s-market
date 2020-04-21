@@ -11,7 +11,7 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)](https://lbesson.mit-license.org/)
 
 
-## 1. Social Media Clone
+## 1. Farmer's Market
 
 Avery's Organics website displays monthly and daily schedule.
 Each month and day has different produce items and locations.
