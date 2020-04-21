@@ -7,7 +7,7 @@ function App() {
 
   return (
     <React.Fragment>
-    <div className="HeadStyle extra-margin"><Header /></div>
+    <div className="extra-margin"><Header /></div>
     <div><Body /></div>
     </React.Fragment>
   );
