@@ -57,4 +57,4 @@ Any feedback is appreciated! Please contact at email: rutzkri000@gmail.com or ji
 
 *This software is licensed under the MIT license*
 
-Copyright (c) 2020 **_ Krista Rutz and Jiwon Han_**
+Copyright (c) 2020 **Krista Rutz and Jiwon Han**
