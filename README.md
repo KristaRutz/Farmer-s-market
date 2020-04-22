@@ -20,7 +20,7 @@ Each month and day has different produce items and locations.
 
 Designed the components based on two data : Available Product and Market Schedule.
 
-Available product has month and it's selection. Market schedule has day, location, hours, booth.
+Available product has month and its selection. Market schedule has day, location, hours, booth.
 
 App is a most upper parent component that has every components as children.
 
